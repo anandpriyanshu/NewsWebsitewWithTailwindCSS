@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../static/style/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../static/style/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="navcontainer">
+          <img src="./static/images/Black White Minimalist Logo.png" />
+          <ul>
+            <a href="/index.html"><li id="index">General</li></a>
+            <a href="/src/sports.html"><li id="sports">Sports</li></a>
+            <a href="/src/science.html"><li id="science">Science</li></a>
+            <a href="/src/technology.html"
+              ><li id="technology">Technology</li></a
+            >
+            <a href="/src/health.html"><li id="health">Health</li></a>
+          </ul>
+
+          <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+
+        <div class="navcollapse" id="navcol">
+          <ul>
+            <a href="/index.html"><li id="index">General</li></a>
+            <a href="/src/sports.html"><li id="sports">Sports</li></a>
+            <a href="/src/science.html"><li id="science">Science</li></a>
+            <a href="/src/technology.html"
+              ><li id="technology">Technology</li></a
+            >
+            <a href="/src/health.html"><li id="health">Health</li></a>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main
+      id="news-container"
+      class="flex justify-between flex-col items-center"
+    >
+      <!-- <div class="flex justify-center items-center flex-col mt-10">
+        <div
+          class="flex items-center w-1500px h-400px shadow-mote max-[1500px]:w-1200px max-[1200px]:w-800px max-[800px]:w-600px max-[600px]:w-400px max-[600px]:h-800px max-[600px]:flex-col max-[400px]:w-full"
+        >
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5PXkgMOXzlPtGMU9wer4gSaSrjVE5lafR8A&usqp=CAU"
+            class="max-[800px]:w-80 max-[600px]:w-400px w-400px h-400px p-6"
+            alt=""
+          />
+
+          <div class="p-6 align self-start flex flex-col">
+            <h2 class="text-xl font-black">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero
+              ipsum necessitatibus eius eaque nisi asperiores ducimus, aliquid
+              incidunt pariatur reiciendis.
+            </h2>
+            <p
+              class="line-clamp-1 hover:line-clamp-2 cursor-pointer transition-all duration-500"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+              veritatis perspiciatis quod, quas sequi mollitia quasi eos,
+              exercitationem ea, iste fugiat voluptatibus adipisci! Non eum eos
+              nemo nihil officiis cum.
+            </p>
+            <button
+              disabled="disabled"
+              class="ring-2 ring-blue-500 p-2 mt-5 font-black w-52 cursor-pointer text-xl"
+            >
+              PublishedAt
+            </button>
+          </div>
+        </div>
+      </div> -->
+      <!-- <img src="./static/images/Cube-0.5s-200px.svg" alt="" /> -->
+    </main>
+
+    <div class="flex justify-center" id="shanu">
+      <img src="/static/images/Cube-0.5s-200px.svg" alt="" />
+    </div>
+
+    <script src="../static/script/science.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        // Global settings:
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: "aos-init", // class applied after initialization
+        animatedClassName: "aos-animate", // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 120, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 400, // values from 0 to 3000, with step 50ms
+        easing: "ease", // default easing for AOS animations
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
+      });
+    </script>
+  </body>
+</html>
